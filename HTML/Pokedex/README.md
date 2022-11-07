@@ -1,1 +1,1 @@
-<div><img align="center" src="./Pokedex.png"></div>
+<div><img align="center" src="./images/Pokedex.png"></div>
