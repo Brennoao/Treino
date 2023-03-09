@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/style_Registro.css">
+    
+</head>
+<body class="Align">
+    <div class="Imagem"><img src="../img/Overwatch.jpg" alt="Imagem Direita"></div>
+    <div class="Bloco-Primario Align">
+        <div class="Align ConfigP">
+            <!-- NOME -->
+            <label for="Nome">Nome :</label>
+            <input type="text" placeholder="Digite Aqui" id="Nome" required>
+            <!-- SOBRE NOME -->
+            <label for="Sobre Nome">Sobre Nome :</label>
+            <input type="text" placeholder="Digite Aqui" id="Sobre Nome" required>
+            <!-- CPF -->
+            <label for="CPF">CPF :</label>
+            <input type="number" placeholder="Digite Aqui" id="CPF" onkeypress="return onlynumber();" required>
+            <!-- EMAIL -->
+            <label for="Email">Email :</label>
+            <input type="email" placeholder="Digite Aqui" id="Email" required>
+            <!-- CELULAR -->
+            <label for="Celular">Celular :</label>
+            <input type="tel" placeholder="Digite Aqui" id="Celular"  onkeypress="return onlynumberT();" required>
+            <!-- DATA DE NASCIMENTO -->
+            <label for="Data de Nascimento">Data de Nascimento :</label>
+            <input type="date" placeholder="Digite Aqui" id="Data de Nascimento" required>
+            <!-- Sexo -->
+            <label for="Sexo">Sexo :</label>
+            <select name="Sexo" id="Sexo">
+                <option value="M">Masculino</option>
+                <option value="F">Feminino</option>
+                <option value="Outher">Outros</option>
+            </select>
+            <!-- Password -->
+            <label for="Senha">Senha :</label>
+            <input type="password" placeholder="Digite Aqui" id="Senha" required>
+        </div>
+    </div>
+
+    <script src="../js/Number.js"></script>
+</body>
+</html>
