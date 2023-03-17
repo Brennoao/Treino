@@ -1,0 +1,82 @@
+.Align {
+    display: flex;
+}
+
+.Align1 {
+    margin-left: 1em;
+}
+
+/* HEADER */
+
+header {
+    padding: 0.5em;
+    width: 100vw;
+    overflow: hidden;
+    height: 2em;
+    align-items: center;
+    background-color: var(--LightBlue);
+    color: var(--White);
+}
+/* HEADER ÍCONE */
+
+header ion-icon {
+    font-size: 1.5em;
+}
+
+/* HEADER LEFT */
+
+.Header_Left {
+    align-items: center;
+    width: 33%;
+}
+
+.Header_Left p {
+    margin-left: 0.5em;
+    font-weight: 500;
+    font-size: 1em;
+    letter-spacing: 0.1em;
+}
+
+/* HEADER MEIO */
+
+.Header_Meio, .Header_Meio-Dropdown {
+    align-items: center;
+}
+
+.Header_Meio-Dropdown {
+    justify-content: end;
+}
+
+.Header_Meio {
+    width: 33%;
+    height: 90%;
+    background-color: var(--White);
+    color: var(--Black)!important;
+    border-radius: 5px;
+    justify-content: space-between;
+}
+
+/* ION-ICON SEARCH */
+
+.Meio_Primeiro { color: var(--LightBlue); margin-left: 0.2em;}
+
+.Meio_Segundo { color: var(--LightBlue); justify-content: end;}
+
+.Header_Meio input {
+    margin: 1em;
+    width: 65%;
+    height: 80%;
+    border: none;
+}
+
+.Header_p {
+    flex-wrap: nowrap;
+    color: var(--Black);
+}
+
+/* HEADER RIGHT */
+
+.Header_Right {
+    width: 33%;
+    justify-content: flex-end;
+}
