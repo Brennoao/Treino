@@ -45,6 +45,11 @@ header ion-icon {
 
 .Header_Meio-Dropdown {
     justify-content: end;
+    font-size: 0.9em;
+}
+
+.Header_Meio-Dropdown p {
+    color: var(--Gray);
 }
 
 .Header_Meio {
@@ -60,11 +65,11 @@ header ion-icon {
 
 .Meio_Primeiro { color: var(--LightBlue); margin-left: 0.2em;}
 
-.Meio_Segundo { color: var(--LightBlue); justify-content: end;}
+.Meio_Segundo { color: var(--LightBlue); justify-content: end; margin: 0 0.5em;}
 
 .Header_Meio input {
     margin: 1em;
-    width: 65%;
+    width: 60%;
     height: 80%;
     border: none;
 }
