@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Left-Menu</title>
+
+    <link rel="stylesheet" href="/style/reset.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <input type="checkbox" id="toggle" class="menu" checked/>
+    <label for="toggle" class="label"><ion-icon id="ion" size="large" name="menu-outline"></ion-icon></label>
+
+    <section id="menu" class="leftMenu">
+        <div class="menuHeader flexRow">
+            <div class="home flexRow">
+                <ion-icon name="home-outline" class="iconMenuHeader"></ion-icon>
+                <p>home</p>
+            </div>
+            <button class="buttonMenuHeader"><ion-icon class="buttonIcon" name="close-outline"></ion-icon></button>
+        </div>
+        <ul class="List">
+          
+        </ul>
+    </section>
+
+    <script type="module" src="index.js"></script>
+    <script>document.querySelector('#toggle').addEventListener('click', function () {
+        var icone = document.querySelector('#ion');
+    
+        icone.setAttribute('name', this.checked ? 'close-outline' : 'menu-outline')
+    });
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.menu, .leftMenu {
+    display: none;
+}
+
+#toggle:checked+.label ion-icon {
+    animation: rotate 500ms linear;
+}
+
+#ion {
+    transition: all 0.5ms;
+}
+
+.leftMenu {
+    position: absolute;
+    flex-direction: column; align-items: center;
+    left: -10%;
+    background-color: brown;
+    border-radius: 0 10px 0 0;
+    width: 25%;
+    height: 100%;
+    transition: left 1s ease-in-out;
+}
+
+.menu:checked~.leftMenu {
+    display: flex;
+    left: 0;
+    animation: slideInFromLeft 200ms;
+}
+
+.menuHeader {
+    width: 100%;
+    padding: 0.5em;
+    margin: 1em;
+    justify-content: space-between!important;
+    background: var(--main);
+}
+
+.home {
+    display: flex; gap: 0.4em;
+    color: var(--subMain);
+}
+
+.buttonMenuHeader {
+    width: 25px; height: 25px;
+    background: var(--subMain);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.buttonIcon {
+    font-size: 1.3rem; color: var(--main);
+}
+
+.List {
+    display: flex; flex-direction: column; gap: 1em;
+}
+
+.insideList {
+    list-style-type: none;
+    color: var(--main);
+    border-bottom: 2px solid var(--main);
+}
+
+.menuAncor {
+    text-decoration: none;
+    color: var(--main);
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(100deg);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+
+    to {
+        transform: translateX(0);
+    }
+}
+
+
+.flexRow { display: flex; justify-content: center; align-items: center; }
