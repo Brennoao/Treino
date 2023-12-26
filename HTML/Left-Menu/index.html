@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <input type="checkbox" id="toggle" class="menu" checked/>
+    <input type="checkbox" id="toggle" class="menu" />
     <label for="toggle" class="label"><ion-icon id="ion" size="large" name="menu-outline"></ion-icon></label>
 
     <section id="menu" class="leftMenu">
@@ -20,21 +20,15 @@
                 <ion-icon name="home-outline" class="iconMenuHeader"></ion-icon>
                 <p>home</p>
             </div>
-            <button class="buttonMenuHeader"><ion-icon class="buttonIcon" name="close-outline"></ion-icon></button>
+            <button id="close" class="buttonMenuHeader" onclick="closeMenu()"><ion-icon class="buttonIcon" name="close-outline"></ion-icon></button>
         </div>
         <ul class="List">
-          
+
         </ul>
     </section>
 
     <script type="module" src="index.js"></script>
-    <script>document.querySelector('#toggle').addEventListener('click', function () {
-        var icone = document.querySelector('#ion');
-    
-        icone.setAttribute('name', this.checked ? 'close-outline' : 'menu-outline')
-    });
-    </script>
-
+    <script src="/javaScript//smallFunctions.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 

@@ -1,14 +1,12 @@
-.menu, .leftMenu {
+.menu, .leftMenu { display: none; }
+
+.label { cursor: pointer; }
+
+#toggle:checked+.label {
     display: none;
 }
 
-#toggle:checked+.label ion-icon {
-    animation: rotate 500ms linear;
-}
-
-#ion {
-    transition: all 0.5ms;
-}
+#ion { transition: all 0.5ms; }
 
 .leftMenu {
     position: absolute;
@@ -16,8 +14,7 @@
     left: -10%;
     background-color: brown;
     border-radius: 0 10px 0 0;
-    width: 25%;
-    height: 100%;
+    width: 25%; height: 100%;
     transition: left 1s ease-in-out;
 }
 
